@@ -1,5 +1,18 @@
-def increase_credits
-update_attributes(:credits => credits + 1)
+class Count
+  attr_reader :value
+ 
+  def initialize
+    @value = 0
+  end
+ 
+  def post++
+    old_value = @value
+    @value = @value += 1
+    old_value
+  end
 end
-
-puts credits
+ 
+c = Count.new
+c.value # => 0
+c++      # => 0
+c.value # => 1
