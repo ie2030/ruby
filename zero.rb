@@ -1,4 +1,4 @@
-n = 15_544_864
+n = 4
 (2 ... n).each do |i| 
 	if n % i == 0
 		puts false
