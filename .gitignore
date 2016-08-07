@@ -1,0 +1,8 @@
+#ANDROID IGNORES
+#bUILT APPLICATION FILES
+*.apk
+*.ap_
+
+#Java class files
+
+*.class
